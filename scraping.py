@@ -12,6 +12,8 @@ import selenium.common.exceptions as selenium_exceptions
 phone_number = "+62 123456" #fill with Number
 message = "Jancok" #fill with massage
 
+
+
 service = Service(EdgeChromiumDriverManager().install())
 
 # Initialize the WebDriver
@@ -35,6 +37,10 @@ try:
 except:
     # If the element is not found, continue to the next step
     print("Element not found, continuing to the next step...")
+
+side_element = WebDriverWait(driver, 60).until(
+        EC.presence_of_element_located((By.XPATH, '//*[@id="side"]/div[1]/div/div[2]/div[2]/div/div/p'))
+    )
 
 driver.get(f'https://web.whatsapp.com/send?phone={phone_number}&text={message}')
 
