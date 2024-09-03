@@ -6,3 +6,9 @@ How we used this ?
 
 1.  Changes <span style="color: red;">**phone_number**</span> variable with your friend name
 2.  Change <span style="color: red;">**message**</span> variable with your own message
+
+
+# Potential Use Case
+
+1. This tool can be used to be auto reminder
+2. This tool can be used to be auto confirmation
